@@ -1,0 +1,28 @@
+<h3 class="text-white p-3">Technology News</h3>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div *ngFor="let data of technologyDisplay " class="col-lg-3">
+
+            <div class="card mb-4 bg-light mt-2">
+                <img src="{{data.urlToImage}}" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary title">{{data.title}}</h5>
+                    <p class="card-text content">{{data.content}}</p>
+                    <p class="card-text"><small class="text-muted">{{data.publishedAt | date}}</small></p>
+                    <a class="me-0" href="{{data.url}}" target="_blank"><button class='btn btn-dark me-0'>Read
+                            More</button></a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <h4></h4>
+        </div>
+    </div>
+</div>
